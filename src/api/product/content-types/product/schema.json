@@ -29,11 +29,11 @@
     "price": {
       "type": "integer"
     },
-    "priceWithDiscount": {
-      "type": "integer"
-    },
     "flavor": {
       "type": "string"
+    },
+    "discount": {
+      "type": "integer"
     }
   }
 }

@@ -901,8 +901,8 @@ export interface ApiProductProduct extends Schema.CollectionType {
     name: Attribute.String;
     image: Attribute.Media;
     price: Attribute.Integer;
-    priceWithDiscount: Attribute.Integer;
     flavor: Attribute.String;
+    discount: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

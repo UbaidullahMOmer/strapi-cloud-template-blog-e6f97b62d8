@@ -34,6 +34,9 @@
     },
     "discount": {
       "type": "integer"
+    },
+    "detail": {
+      "type": "text"
     }
   }
 }

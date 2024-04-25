@@ -4,7 +4,8 @@
   "info": {
     "singularName": "order",
     "pluralName": "orders",
-    "displayName": "order"
+    "displayName": "order",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,38 @@
   "pluginOptions": {},
   "attributes": {
     "quantity": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
     },
     "productId": {
       "type": "integer",
       "required": true
     },
     "totalPrice": {
-      "type": "integer"
+      "type": "integer",
+      "required": true
+    },
+    "orderCreationDate": {
+      "type": "date",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "number": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "biginteger",
+      "required": true
+    },
+    "userName": {
+      "type": "string",
+      "required": false
+    },
+    "useEmail": {
+      "type": "string"
     }
   }
 }

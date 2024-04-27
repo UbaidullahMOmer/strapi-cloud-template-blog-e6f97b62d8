@@ -866,15 +866,14 @@ export interface ApiOrderOrder extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    quantity: Attribute.Integer & Attribute.Required;
-    productId: Attribute.Integer & Attribute.Required;
     totalPrice: Attribute.Integer & Attribute.Required;
     orderCreationDate: Attribute.Date & Attribute.Required;
     address: Attribute.String & Attribute.Required;
-    number: Attribute.String;
     phoneNumber: Attribute.BigInteger & Attribute.Required;
     userName: Attribute.String;
-    useEmail: Attribute.String;
+    products: Attribute.JSON & Attribute.Required;
+    email: Attribute.Email;
+    orderId: Attribute.UID;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -12,14 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "quantity": {
-      "type": "integer",
-      "required": true
-    },
-    "productId": {
-      "type": "integer",
-      "required": true
-    },
     "totalPrice": {
       "type": "integer",
       "required": true
@@ -32,9 +24,6 @@
       "type": "string",
       "required": true
     },
-    "number": {
-      "type": "string"
-    },
     "phoneNumber": {
       "type": "biginteger",
       "required": true
@@ -43,8 +32,15 @@
       "type": "string",
       "required": false
     },
-    "useEmail": {
-      "type": "string"
+    "products": {
+      "type": "json",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "orderId": {
+      "type": "uid"
     }
   }
 }
